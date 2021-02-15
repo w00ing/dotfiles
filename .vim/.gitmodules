@@ -1,0 +1,15 @@
+[submodule "bundle/Vundle"]
+	path = bundle/Vundle
+	url = https://github.com/VundleVim/Vundle.vim.git
+[submodule "/home/ubuntu/.vim/bundle/auto-pairs"]
+	path = /home/ubuntu/.vim/bundle/auto-pairs
+	url = https://github.com/jiangmiao/auto-pairs.git
+[submodule "bundle/Vundle.vim"]
+	path = bundle/Vundle.vim
+	url = https://github.com/gmarik/Vundle.vim.git
+[submodule "/home/ubuntu/.vim/bundle/vundle"]
+	path = /home/ubuntu/.vim/bundle/vundle
+	url = http://github.com/gmarik/vundle.git
+[submodule "/home/ubuntu/.vim/bundle/Vundle.vim"]
+	path = /home/ubuntu/.vim/bundle/Vundle.vim
+	url = https://github.com/VundleVim/Vundle.vim.git

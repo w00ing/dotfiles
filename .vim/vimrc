@@ -1,0 +1,37 @@
+colorscheme desert
+set number relativenumber
+set shiftwidth=4
+set nocompatible 
+filetype off 
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin() 
+" call vundle#rc()
+Plugin 'VundleVim/Vundle.vim' "required
+Plugin 'tpope/vim-fugitive' "required 
+Bundle 'tpope/vim-sensible'
+Bundle 'scrooloose/syntastic'
+Bundle 'scrooloose/nercommenter'
+Bundle 'mattn/emmet-vim'
+Bundle 'Shougo/neocomplcache.vim'
+Bundle 'nathanaelkane/vim-indent-guides'
+Bundle 'jiangmiao/auto-pairs'
+call vundle#end()            
+filetype plugin indent on " Put your non-Plugin stuff after this line
+" Setings for parenthesis""
+" let g:loaded_matchparen=1
+let g:rainbow_active = 1
+" set sensible highlight matches that don't obscure the text
+:highlight MatchParen cterm=underline ctermbg=black ctermfg=magenta
+:highlight MatchParen gui=underline guibg=black guifg=NONE
+if exists('$TMUX')
+  let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+  let &t_SR = "\<Esc>]50;CursorShape=2\x7"
+  let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+else
+  let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+  let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+endif
+noremap <Leader>y "*y
+noremap <Leader>p "*p
+
+

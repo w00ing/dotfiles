@@ -1,0 +1,29 @@
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+[user]
+	name = Woo-yeong Kim
+	email = kimwy1997@gmail.com
+
+[core]
+	editor = "vim"
+
+[alias]
+    co = checkout
+    rb = rebase -i
+    st = status
+    cm = commit -m
+    plo = pull origin
+    pso = push origin
+    lg = log --graph --abbrev-commit --decorate --format=format:'%C(cyan)%h%C(reset) - %C(green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(yellow)%d%C(reset)' --all
+    ad = add
+    ca = commit --amend
+    tg = tag -n
+    df = diff
+    br = branch
+    cb = checkout -b
+    rao = remote add origin
+[init]
+	defaultBranch = main
