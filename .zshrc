@@ -164,3 +164,16 @@ if [ -f "${SSH_ENV}" ]; then
 else
     start_agent;
 fi
+
+# Conda config
+export PATH="/usr/local/anaconda3/bin:$PATH"
+
+
+# Pyenv config
+export PATH="$HOME/.pyenv/bin:$PATH"
+export PATH="/usr/local/bin:$PATH"
+
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+export LDFLAGS="-L/usr/local/opt/zlib/lib -L/usr/local/opt/bzip2/lib"
+export CPPFLAGS="-I/usr/local/opt/zlib/include -I/usr/local/opt/bzip2/include"
