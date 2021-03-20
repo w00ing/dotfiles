@@ -165,13 +165,10 @@ else
     start_agent;
 fi
 
-# Conda config
 export PATH="/usr/local/anaconda3/bin:$PATH"
 
 
 # Pyenv config
-export PATH="$HOME/.pyenv/bin:$PATH"
-export PATH="/usr/local/bin:$PATH"
 
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
