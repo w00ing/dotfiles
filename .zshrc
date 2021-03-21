@@ -80,11 +80,13 @@ source $ZSH/oh-my-zsh.sh
 # Syntax highlighting
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # Remove user@hostname from the line
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(virtualenv dir rbenv vcs)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(anaconda virtualenv dir rbenv vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history time battery)
 # Show the name of the virtual envirnoment in the terminal
 POWERLEVEL9K_VIRTUALENV_BACKGROUND='240'
 POWERLEVEL9K_VIRTUALENV_FOREGROUND='252'
+POWERLEVEL9K_ANACONDA_BACKGROUND='240'
+POWERLEVEL9K_ANACONDA_FOREGROUND='252'
 # Command line one line below 
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 # Remove the icon for the multi-line prompt
@@ -165,7 +167,7 @@ else
     start_agent;
 fi
 
-export PATH="/usr/local/anaconda3/bin:$PATH"
+# export PATH="/usr/local/anaconda3/bin:$PATH"  # commented out by conda initialize
 
 
 # Pyenv config
@@ -174,3 +176,19 @@ eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 export LDFLAGS="-L/usr/local/opt/zlib/lib -L/usr/local/opt/bzip2/lib"
 export CPPFLAGS="-I/usr/local/opt/zlib/include -I/usr/local/opt/bzip2/include"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/usr/local/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/usr/local/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/usr/local/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/usr/local/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
