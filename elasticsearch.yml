@@ -88,3 +88,5 @@ node.data: true
 #
 #action.destructive_requires_name: true
 
+# Disable Schemaless option:
+action.auto_create_index: ".watches,.triggered_watches,.watcher-history-*"
