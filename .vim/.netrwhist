@@ -1,4 +1,10 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =2
+let g:netrw_dirhistcnt =8
+let g:netrw_dirhist_8='/Users/koooo/.dotfiles/.vim'
+let g:netrw_dirhist_7='/Users/koooo/.dotfiles'
+let g:netrw_dirhist_6='/Users/koooo/.dotfiles/.vim'
+let g:netrw_dirhist_5='/Users/koooo/.dotfiles'
+let g:netrw_dirhist_4='/Users/koooo/.dotfiles/.vim'
+let g:netrw_dirhist_3='/Users/koooo/.dotfiles'
 let g:netrw_dirhist_2='/Users/koooo/test'
 let g:netrw_dirhist_1='/Users/koooo/dev/p-rogramming/test'

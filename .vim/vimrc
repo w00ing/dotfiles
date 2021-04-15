@@ -47,5 +47,3 @@ autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
 "let &t_SR = "\<esc>[3 q"
 "let &t_EI = "\<esc>[2 q"  
 
-:inoremap jj <Esc>
-:inoremap kk <Esc>
