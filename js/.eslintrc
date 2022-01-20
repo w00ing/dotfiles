@@ -1,0 +1,86 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2021,
+    "sourceType": "module"
+  },
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "plugins": ["import", "react", "react-hooks"],
+  "extends": ["airbnb", "eslint-config-prettier"],
+  "rules": {
+    "quotes": "off",
+    "curly": "off",
+    "comma-dangle": "off",
+    "keyword-spacing": "off",
+    "semi": "off",
+    "global-require": "off",
+    "default-case": "off",
+    "arrow-body-style": "off",
+    "consistent-return": "off",
+    "prefer-template": "off",
+    "camelcase": "off",
+    "object-shorthand": "off",
+    "no-extra-boolean-cast": "off",
+    "no-return-assign": "warn",
+    "no-param-reassign": "off",
+    "no-plusplus": "off",
+    "no-console": "off",
+    "no-case-declarations": "off",
+    "no-nested-ternary": "off",
+    "no-bitwise": "off",
+    "no-undef": 2,
+    "no-trailing-spaces": "off",
+    "no-useless-concat": "off",
+    "no-empty-pattern": "off",
+    "no-unreachable": "off",
+    "no-alert": "off",
+    "no-unused-vars": "off",
+    "no-use-before-define": "off",
+    "no-unused-expressions": "off",
+    "react/no-array-index-key": "warn",
+    "react/no-unused-prop-types": "off",
+    "react/no-danger": "off",
+    "react/no-unescaped-entities": "off",
+    "react/prop-types": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-filename-extension": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/button-has-type": "warn",
+    "react/require-default-props": "off",
+    "react-hooks/rules-of-hooks": "warn",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/self-closing-comp": "off",
+    "import/no-absolute-path": "off",
+    "import/no-unresolved": "off",
+    "import/no-extraneous-dependencies": "off",
+    "import/prefer-default-export": "off",
+    "import/order": "off",
+    "import/extensions": "off",
+    "prettier/prettier": "off",
+    "arrow-boks/exhaustive-deps": "warn",
+    "eslint-comments/no-unlimited-disable": "off",
+    "eslint-comments/no-unused-disable": "off",
+    "jsx-a11y/no-noninteractive-element-interactions": "warn",
+    "jsx-a11y/no-static-element-interactions": "warn",
+    "jsx-a11y/click-events-have-key-events": "warn",
+    "jsx-a11y/interactive-supports-focus": "warn",
+    "jsx-a11y/tabindex-no-positive": "off",
+    "jsx-a11y/iframe-has-title": "off",
+    "jsx-a11y/anchor-is-valid": "off"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}
